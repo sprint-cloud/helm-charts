@@ -93,3 +93,32 @@ postgresql:
   # PostgreSQL network policy configuration
   networkPolicy:
     enabled: false
+
+traefik:
+  enabled: true
+  ingressClass:
+    enabled: true
+    isDefaultClass: false
+  ingressRoute:
+    dashboard:
+      enabled: false
+  providers:
+    kubernetesCRD:
+      enabled: true
+      allowCrossNamespace: false
+      allowExternalNameServices: false
+      allowEmptyServices: false
+      ingressClass: hub-proxy
+      # labelSelector: environment=production,method=traefik
+      namespaces: []
+        # - "default"
+  additionalArguments: []
+  ports:
+    websecure:
+      expose: false
+    web:
+      forwardedHeaders:
+        insecure: true
+  service:
+    type: ClusterIP
+    
