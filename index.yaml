@@ -1,14 +1,14 @@
 apiVersion: v1
 entries:
-  code-server:
+  sprint-flask-app:
   - apiVersion: v2
-    appVersion: 4.11.0
-    created: "2023-03-24T08:12:29.5909061+01:00"
-    description: A Helm chart for coder/code-server
-    digest: 989f30355c7f07b4c762075bf92d8c9e43f17a30587e36db632d3680356e4065
-    name: code-server
+    appVersion: 1.16.0
+    created: "2023-07-30T18:00:21.844821039+02:00"
+    description: A Helm chart for Kubernetes
+    digest: b7502270f4667c14e924e1ca43eae32bf929579b848d79360a848597b8ae8a88
+    name: sprint-flask-app
     type: application
     urls:
-    - https://sprint-cloud.github.io/helm-charts/code-server-3.7.0.tgz
-    version: 3.7.0
-generated: "2023-03-24T08:12:29.58983757+01:00"
+    - sprint-flask-app-0.1.0.tgz
+    version: 0.1.0
+generated: "2023-07-30T18:00:21.843644746+02:00"
