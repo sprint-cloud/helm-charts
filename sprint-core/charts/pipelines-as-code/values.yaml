@@ -1,0 +1,3 @@
+gosmee:
+  enabled: false
+  webhook_proxy_url: <INSERT URL>
