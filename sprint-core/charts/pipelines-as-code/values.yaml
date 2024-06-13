@@ -1,6 +1,7 @@
 ingress:
   enabled: false
   host: webhook.host.tld
+  ingressClassName: nginx
 
 gosmee:
   enabled: false

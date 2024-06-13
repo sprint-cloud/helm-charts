@@ -7,7 +7,7 @@ metadata:
   name: pipelines-as-code
   namespace: pipelines-as-code
 spec:
-  ingressClassName: nginx
+  ingressClassName: {{ .Values.ingress.ingressClassName }}
   rules:
   - host: {{ .Values.ingress.host | quote }}
     http:
