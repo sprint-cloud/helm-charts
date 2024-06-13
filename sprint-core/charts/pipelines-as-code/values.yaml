@@ -1,3 +1,7 @@
+ingress:
+  enabled: false
+  host: webhook.host.tld
+
 gosmee:
   enabled: false
   webhook_proxy_url: <INSERT URL>
