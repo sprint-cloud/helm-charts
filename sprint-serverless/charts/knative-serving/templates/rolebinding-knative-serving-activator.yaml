@@ -9,7 +9,7 @@ metadata:
 subjects:
 - kind: ServiceAccount
   name: activator
-  namespace: {{ .Release.Namespace }}
+  namespace: knative-serving
 roleRef:
   kind: Role
   name: knative-serving-activator

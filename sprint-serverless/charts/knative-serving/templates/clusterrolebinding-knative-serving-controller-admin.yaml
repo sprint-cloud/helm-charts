@@ -9,7 +9,7 @@ metadata:
 subjects:
   - kind: ServiceAccount
     name: controller
-    namespace: {{ .Release.Namespace }}
+    namespace: knative-serving
 roleRef:
   kind: ClusterRole
   name: knative-serving-admin
