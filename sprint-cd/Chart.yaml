@@ -1,6 +1,6 @@
 apiVersion: v2
 name: sprint-cd
-description: Continues Deployment infrstructure for Sprint
+description: Continues Deployment infrastructure for Sprint
 
 # A chart can be either an 'application' or a 'library' chart.
 #
