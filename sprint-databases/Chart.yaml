@@ -1,6 +1,6 @@
 apiVersion: v2
 name: sprint-databases
-description: A Helm chart for Kubernetes
+description: Sprint Database as a service infrastructure
 
 # A chart can be either an 'application' or a 'library' chart.
 #
