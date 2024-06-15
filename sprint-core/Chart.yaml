@@ -1,6 +1,6 @@
 apiVersion: v2
-name: sprint-auth
-description: A Helm chart for Sprint Authentication infra
+name: sprint-core
+description: A Helm chart for Sprint core cluster infra
 
 # A chart can be either an 'application' or a 'library' chart.
 #
@@ -27,7 +27,9 @@ dependencies:
   - name: dex
     repository: https://charts.dexidp.io
     version: 0.18.0
+    condition: dex.enabled
   - name: cert-manager
     repository: https://charts.jetstack.io
     version: v1.15.0
     condition: cert-manager.enabled
+  
