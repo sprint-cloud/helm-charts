@@ -2,5 +2,8 @@ dependencies:
 - name: dex
   repository: https://charts.dexidp.io
   version: 0.18.0
-digest: sha256:c5f94c1b0c3dab107fc24d780f9eb2b9c61fa2bff93d206d1cc0a6dfc2f76612
-generated: "2024-06-15T20:34:10.482690267+02:00"
+- name: cert-manager
+  repository: https://charts.jetstack.io
+  version: v1.15.0
+digest: sha256:f4fc7c9474e1c69fad0ea1765df29ac4a63e5f5e282197bcfb66b672a0ab8b58
+generated: "2024-06-15T20:39:12.122603287+02:00"

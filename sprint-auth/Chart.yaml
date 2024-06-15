@@ -27,3 +27,7 @@ dependencies:
   - name: dex
     repository: https://charts.dexidp.io
     version: 0.18.0
+  - name: cert-manager
+    repository: https://charts.jetstack.io
+    version: v1.15.0
+    condition: cert-manager.enabled
