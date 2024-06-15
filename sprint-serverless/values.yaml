@@ -1,11 +1,2 @@
-dex:
-  enabled: true
 
-cert-manager:
-  enabled: true
-
-sealed-secrets:
-  enabled: true
-
-kourier:
-  enabled: true
+  

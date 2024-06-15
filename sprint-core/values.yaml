@@ -1,2 +1,11 @@
+metallb:
+  enabled: false
+
+kourier:
+  enabled: true
+
+sealed-secrets:
+  enabled: true
+
 cert-manager:
   enabled: true

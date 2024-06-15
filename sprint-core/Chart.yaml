@@ -24,6 +24,10 @@ version: 0.1.0
 appVersion: "0.1.0"
 
 dependencies:
+  - name: metallb
+    repository: https://metallb.github.io/metallb
+    version: 0.14.5
+    condition: metallb.enabled
   - name: dex
     repository: https://charts.dexidp.io
     version: 0.18.0
@@ -32,4 +36,5 @@ dependencies:
     repository: https://charts.jetstack.io
     version: v1.15.0
     condition: cert-manager.enabled
+
   
