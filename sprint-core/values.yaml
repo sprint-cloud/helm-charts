@@ -1,0 +1,13 @@
+letsencrypt:
+  email: you@example.com
+  dnsZones:
+    - "example.com"
+  staging:
+    enable: true
+    server: https://acme-staging-v02.api.letsencrypt.org/directory
+    tokensecret: cloudflare-token-secret
+  production:
+    enable: false
+    server: https://acme-v02.api.letsencrypt.org/directory
+    tokensecret: cloudflare-token-secret
+

@@ -1,6 +1,6 @@
 apiVersion: v2
 name: sprint-core
-description: A Helm chart for Sprint core cluster infra
+description: Base infrastructure for sprint cloud
 
 # A chart can be either an 'application' or a 'library' chart.
 #
@@ -22,42 +22,6 @@ version: 0.1.0
 # follow Semantic Versioning. They should reflect the version the application is using.
 # It is recommended to use it with quotes.
 appVersion: "0.1.0"
-
-dependencies:
-  - name: traefik
-    repository: https://traefik.github.io/charts
-    version: 28.3.0
-    condition: traefik.enabled
-  - name: metallb
-    repository: https://metallb.github.io/metallb
-    version: 0.14.5
-    condition: metallb.enabled
-  - name: dex
-    repository: https://charts.dexidp.io
-    version: 0.18.0
-    condition: dex.enabled
-  - name: cert-manager
-    repository: https://charts.jetstack.io
-    version: v1.15.0
-    condition: cert-manager.enabled
-  - name: cloudnative-pg
-    version: 0.21.5
-    repository: https://cloudnative-pg.github.io/charts
-    condition: cloudnative-pg.enabled
-  - name: argo-cd
-    version: 3.35.4
-    repository: https://argoproj.github.io/argo-helm
-    condition: argocd.enabled
-  - name: argo-workflows
-    version: 0.41.8
-    repository: https://argoproj.github.io/argo-helm
-    condition: argo-workflows.enabled
-  - name: argo-events
-    repository: https://argoproj.github.io/argo-helm
-    version: 2.4.6
-    condition: argo-events.enabled
-
-
   
 
   
