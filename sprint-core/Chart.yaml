@@ -36,5 +36,9 @@ dependencies:
     repository: https://charts.jetstack.io
     version: v1.15.0
     condition: cert-manager.enabled
+  - name: argo-cd
+    version: 3.35.4
+    repository: https://argoproj.github.io/argo-helm
+    condition: argocd.enbled
 
   
