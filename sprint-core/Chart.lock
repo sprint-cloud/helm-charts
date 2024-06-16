@@ -1,9 +1,24 @@
 dependencies:
+- name: metallb
+  repository: https://metallb.github.io/metallb
+  version: 0.14.5
 - name: dex
   repository: https://charts.dexidp.io
   version: 0.18.0
 - name: cert-manager
   repository: https://charts.jetstack.io
   version: v1.15.0
-digest: sha256:f4fc7c9474e1c69fad0ea1765df29ac4a63e5f5e282197bcfb66b672a0ab8b58
-generated: "2024-06-15T20:39:12.122603287+02:00"
+- name: cloudnative-pg
+  repository: https://cloudnative-pg.github.io/charts
+  version: 0.21.5
+- name: argo-cd
+  repository: https://argoproj.github.io/argo-helm
+  version: 3.35.4
+- name: argo-workflows
+  repository: https://argoproj.github.io/argo-helm
+  version: 0.41.8
+- name: argo-events
+  repository: https://argoproj.github.io/argo-helm
+  version: 2.4.6
+digest: sha256:cb6310e9299e5592327f76530825e093db069c66eac14b69268124df9870d3b2
+generated: "2024-06-16T16:44:06.945733952+02:00"

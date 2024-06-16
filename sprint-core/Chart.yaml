@@ -43,7 +43,17 @@ dependencies:
   - name: argo-cd
     version: 3.35.4
     repository: https://argoproj.github.io/argo-helm
-    condition: argocd.enbled
+    condition: argocd.enabled
+  - name: argo-workflows
+    version: 0.41.8
+    repository: https://argoproj.github.io/argo-helm
+    condition: argo-workflows.enabled
+  - name: argo-events
+    repository: https://argoproj.github.io/argo-helm
+    version: 2.4.6
+    condition: argo-events.enabled
+
+
   
 
   
