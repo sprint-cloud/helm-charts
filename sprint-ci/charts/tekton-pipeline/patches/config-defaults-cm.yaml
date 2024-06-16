@@ -1,7 +1,0 @@
-apiVersion: v1
-kind: ConfigMap
-metadata:
-  name: config-defaults
-data:
-  helmTemplateRemoveMe: |
-    {{- toYaml .Values.configDefaults | nindent 2 }}
