@@ -1,4 +1,7 @@
 dependencies:
+- name: traefik
+  repository: https://traefik.github.io/charts
+  version: 28.3.0
 - name: metallb
   repository: https://metallb.github.io/metallb
   version: 0.14.5
@@ -20,5 +23,5 @@ dependencies:
 - name: argo-events
   repository: https://argoproj.github.io/argo-helm
   version: 2.4.6
-digest: sha256:cb6310e9299e5592327f76530825e093db069c66eac14b69268124df9870d3b2
-generated: "2024-06-16T16:44:06.945733952+02:00"
+digest: sha256:80da09cf212c892cca6794a966e400b3e5a8f885ddf8b2c8eda29d8259f62d13
+generated: "2024-06-16T16:47:51.731573331+02:00"
