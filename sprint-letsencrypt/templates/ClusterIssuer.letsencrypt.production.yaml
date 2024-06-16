@@ -1,24 +1,24 @@
-{{ if .Values.letsencrypt.production.enable }}
+{{ if .Values.production.enable }}
 apiVersion: cert-manager.io/v1
 kind: ClusterIssuer
 metadata:
   name: letsencrypt-production
 spec:
   acme:
-    server: {{ .Values.letsencrypt.production.server }}
-    email: {{ .Values.letsencrypt.email }}
+    server: {{ .Values.production.server }}
+    email: {{ .Values.email }}
     privateKeySecretRef:
       name: letsencrypt-production
     solvers:
       - dns01:
           cloudflare:
-            email: {{ .Values.letsencrypt.email }}
+            email: {{ .Values.email }}
             apiTokenSecretRef:
-              name: {{ .Values.letsencrypt.production.tokensecret }}
+              name: {{ .Values.production.tokensecret }}
               key: cloudflare-token
         selector:
           dnsZones:
-            {{- range .Values.letsencrypt.dnsZones }}
+            {{- range .Values.dnsZones }}
             - {{ . | quote }}
             {{- end }}
 {{ end }}

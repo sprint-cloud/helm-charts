@@ -1,24 +1,24 @@
-{{ if .Values.letsencrypt.staging.enable }}
+{{ if .Values.staging.enable }}
 apiVersion: cert-manager.io/v1
 kind: ClusterIssuer
 metadata:
   name: letsencrypt-staging
 spec:
   acme:
-    server: {{ .Values.letsencrypt.staging.server }}
-    email: {{ .Values.letsencrypt.email }}
+    server: {{ .Values.staging.server }}
+    email: {{ .Values.email }}
     privateKeySecretRef:
       name: letsencrypt-staging
     solvers:
       - dns01:
           cloudflare:
-            email: {{ .Values.letsencrypt.email }}
+            email: {{ .Values.email }}
             apiTokenSecretRef:
-              name: {{ .Values.letsencrypt.staging.tokensecret }}
+              name: {{ .Values.staging.tokensecret }}
               key: cloudflare-token
         selector:
           dnsZones:
-            {{- range .Values.letsencrypt.dnsZones }}
+            {{- range .Values.dnsZones }}
             - {{ . | quote }}
             {{- end }}
 {{ end }}
