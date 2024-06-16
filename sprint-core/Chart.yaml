@@ -36,9 +36,14 @@ dependencies:
     repository: https://charts.jetstack.io
     version: v1.15.0
     condition: cert-manager.enabled
+  - name: cloudnative-pg
+    version: 0.21.5
+    repository: https://cloudnative-pg.github.io/charts
+    condition: cloudnative-pg.enabled
   - name: argo-cd
     version: 3.35.4
     repository: https://argoproj.github.io/argo-helm
     condition: argocd.enbled
+  
 
   
